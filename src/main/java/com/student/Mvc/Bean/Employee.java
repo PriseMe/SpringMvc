@@ -57,6 +57,7 @@ public class Employee {
         testcommit(1);
     }
     public void testcommit(int i){
+        testcommit();
     }
 
     public Employee() {
