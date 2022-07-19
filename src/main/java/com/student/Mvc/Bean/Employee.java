@@ -54,7 +54,8 @@ public class Employee {
         this.gender = gender;
     }
     public void testcommit(){
-
+    }
+    public void testcommit(int i){
     }
 
     public Employee() {
