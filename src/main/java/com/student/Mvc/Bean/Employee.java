@@ -54,11 +54,10 @@ public class Employee {
         this.gender = gender;
     }
     public void testcommit(){
-        testcommit(1);
     }
     public void testcommit(int i){
         testcommit();
-        System.out.println(i+1);
+        System.out.println(i+2);
     }
 
     public Employee() {
