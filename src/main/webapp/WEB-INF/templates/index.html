@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+首页
+
+<a th:href="@{/employee_select}">查询</a>
+
+
+
+
+
+<a th:href="@{/target}">访问目标页面</a>
+<a th:href="@{/Filter}">访问目标页面</a>
+<a th:href="@{/testRequestMapping}">测试@RequestMapping的value属性-- >/testRequestMapping</a><br>
+<a th:href="@{/test}">测试@RequestMapping的value属性-->/test</a><br>
+<a th:href="@{/testModelandView}">测试@testModelandView-->/success</a><br>
+<a th:href="@{/testModel}">测试@testModel-->/success</a><br>
+
+<a th:href="@{/test(username='admin' , password=123456)}">测试@RequestMapping的 params属性-->/test</a><br>
+
+<form th:action="@{/testParam}" method="get">
+    <input type="text" name="user_name">
+    <input type="text" name="password">
+    <input type="checkbox" name="like" value="a">
+    <input type="checkbox" name="like" value="b">
+    <input type="checkbox" name="like" value="c">
+    <input type="submit" value="提交">
+</form><br>
+
+<form th:action="@{/testTequestBody}" method="post">
+    <input type="text" name="user_name">
+    <input type="text" name="password">
+    <input type="submit" value="提交">
+</form>
+
+<a th:href="@{/testResponseUser}">测试@testResponseUser -->/test</a><br>
+
+</body>
+</html>
